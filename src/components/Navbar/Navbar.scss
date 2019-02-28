@@ -16,27 +16,19 @@
 }
 
 .nav-link {
-  color: $mainGreen;
+  color: $mainGrey;
   text-decoration: none;
   text-transform: capitalize;
   font-size: 1.2rem;
   transition: all 0.3s linear;
   &:hover {
-    color: $mainGrey;
-  }
-}
-
-.active {
-  color: $mainGrey;
-  &:hover {
     color: $mainGreen;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .nav-links {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
+.active {
+  color: $mainGreen;
+  &:hover {
+    color: $mainGrey;
   }
 }

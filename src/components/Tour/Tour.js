@@ -15,13 +15,18 @@ export default class Tour extends Component {
 
   render() {
     const { showInfo } = this.state;
-    const { deleteTourData } = this.props;
+    const { favorPage, favorTourData, deleteTourData } = this.props;
     const { id, city, img, name, info } = this.props.tour;
     return (
       <article className="tour">
         <div className="img-container">
           <img src={img} alt={name} />
-          <span className="close-btn" onClick={() => deleteTourData(id)}>
+          {favorPage ? null : (
+            <span className="btn favor-btn" onClick={() => favorTourData(id)}>
+              <i className="fas fa-star" />
+            </span>
+          )}
+          <span className="btn close-btn" onClick={() => deleteTourData(id)}>
             <i className="fas fa-window-close" />
           </span>
         </div>
