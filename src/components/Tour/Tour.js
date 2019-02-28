@@ -21,7 +21,6 @@ export default class Tour extends Component {
       <article className="tour">
         <div className="img-container">
           <img src={img} alt={name} />
-          {/* <span className="close-btn" onClick={() => deleteTourData(id)}> */}
           <span className="close-btn" onClick={() => deleteTourData(id)}>
             <i className="fas fa-window-close" />
           </span>
