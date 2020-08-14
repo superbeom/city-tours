@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Navbar.scss";
-import logo from "../../logo.png";
+// import logo from "../../logo.png";
+import logo from "../../images/homelogo.png";
 
 export default class Navbar extends Component {
   render() {
@@ -21,16 +22,7 @@ export default class Navbar extends Component {
               className={`nav-link ${favorPage ? null : "active"}`}
               onClick={tours}
             >
-              tours
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className={`nav-link ${favorPage ? "active" : null}`}
-              onClick={favorTours}
-            >
-              favorite
+              Privacy Policy
             </a>
           </li>
         </ul>
